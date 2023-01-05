@@ -1,23 +1,23 @@
-# optimization Package
+# 1. Optimization Package
 
 The goal of this package is to optimize the memory use of a given dataframe
 
-# How to install the package
+# 2. How to install the package
 
 TBA
 
-# Functionality 
+# 3. Functionality 
 
-## Primary functionality (v1)
+## 3.1. Primary functionality (v1)
 
 - Optimize integer memory usage
 - Optimize float memory usage
 - Optmize object memory usage
 
-## Secundary functionnality (v2)
+## 3.2. Secundary functionnality (v2)
 
 - Convert to datetime for time series work
-- give information on memory optimization (How much memory spared through the optimization process)
+- Give information on memory optimization (How much memory spared through the optimization process)
 
-# How to use the library
+# 4. How to use the library
 

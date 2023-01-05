@@ -43,3 +43,20 @@ class TestOptimize:
         # Expected
         expected_result = ["category", "object"]
         assert result_dtype.to_list() == expected_result
+
+    def test_downsize_memory(self, observation_df):
+        result_df = od.downsize_memory(observation_df)
+        result_dtype = result_df.dtypes
+                
+        # Expected
+        expected_result = [
+            "category",
+            "object",
+            "float32",
+            "float32",
+            "float64",
+            "uint8",
+            "uint16",
+            "uint32"
+        ]
+        assert result_dtype.to_list() == expected_result
