@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Notebook folder
+/notebooks
+*.ipynb
+
+# Test files
+*.csv

@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "optimize"
+version = "0.1.0"
+description = "Python project that creates a package that optimize pandas dataframe"
+authors = ["Ilyes Braham"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
