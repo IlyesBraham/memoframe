@@ -1,3 +1,5 @@
+
+[![PyPI Latest Release](https://img.shields.io/pypi/v/memoframe.svg)](https://pypi.org/project/memoframe/)
 # 1. What is it ?
 
 memoframe is a Python package that enables to easily optimize memory consumption of pandas dataframe. If you encounter OOM (Out of Memory) errors or slow downs during data analysis or model training.
