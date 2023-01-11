@@ -11,15 +11,9 @@ Binary installers for the latest released version are available at the Python Pa
 
 # 3. Features 
 
-## 3.1. Primary Features (v1)
-
 - Optimize integer memory usage
 - Optimize float memory usage
 - Optimize object memory usage
-
-## 3.2. Secundary Features (v2 WIP)
-
-- Convert to datetime for time series work
-- Give information on memory optimization (How much memory spared through the optimization process)
+- Get an estimation of the memory usage saved
 
 # 4. How to use the library
