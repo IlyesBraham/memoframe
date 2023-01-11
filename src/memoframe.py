@@ -6,7 +6,7 @@ class OptimizeDataset:
     """
     Contains various functions to perform memory usage optimization
     on integers, floats and objects column of Pandas Dataframes
-    """ 
+    """
 
     def _optimize_integer_features(self, dataframe) -> pd.DataFrame:
         dataframe_int = dataframe.select_dtypes(include=["int"])
@@ -19,14 +19,14 @@ class OptimizeDataset:
         return converted_float
 
     def _optimize_object_features(self, dataframe) -> pd.DataFrame:
-        dataframe_obj = dataframe.select_dtypes(include=["object"])
-        converted_obj = dataframe_obj.copy()
-        len_dataframe = len(dataframe_obj)
-        for col in converted_obj.columns:
-            num_unique_values = len(converted_obj[col].unique())
+        dataframe_object = dataframe.select_dtypes(include=["object"])
+        converted_object = dataframe_object.copy()
+        len_dataframe = len(dataframe_object)
+        for col in converted_object.columns:
+            num_unique_values = len(converted_object[col].unique())
             if num_unique_values / len_dataframe < 0.5:
-                converted_obj[col] = converted_obj[col].astype("category")
-        return converted_obj
+                converted_object[col] = converted_object[col].astype("category")
+        return converted_object
 
     def get_opti_info(self, dataframe) -> str:
         """
@@ -65,6 +65,4 @@ class OptimizeDataset:
         converted_obj = self._optimize_object_features(dataframe)
 
         # concatanate optimized features
-        return pd.concat(
-            [converted_obj, converted_float, converted_int], axis=1
-        )
+        return pd.concat([converted_obj, converted_float, converted_int], axis=1)
